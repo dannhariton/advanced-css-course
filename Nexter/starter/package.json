@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch:scss": "sass --watch scss:css",
-    "devserver": "live-server",
+    "devserver": "live-server --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:scss",
     "compile:scss": "sass scss/style.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
